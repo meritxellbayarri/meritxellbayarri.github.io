@@ -1,25 +1,26 @@
-timezone: 'Europe/Madrid'
-baseurl: '/'
-
-
-# paginate: 100
-# paginate_path: "/:num/"
-
-plugins:
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-sitemap
-
+---
+title: Meritxellbayarri.Github.Io
+timezone: Europe/Madrid
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+baseurl: "/"
+plugins:
+- jekyll-paginate
+- jekyll-redirect-from
+- jekyll-sitemap
