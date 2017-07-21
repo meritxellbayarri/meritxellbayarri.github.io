@@ -1,0 +1,25 @@
+timezone: 'Europe/Madrid'
+baseurl: '/'
+
+
+# paginate: 100
+# paginate_path: "/:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
