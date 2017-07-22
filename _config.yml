@@ -2,12 +2,6 @@
 title: Meritxell Bayarri
 timezone: Europe/Madrid
 collections:
-  educacio:
-    title: Educació
-    output: true
-  laboral:
-    title: Laboral
-    output: true
   posts:
     title: Posts
     output: true
