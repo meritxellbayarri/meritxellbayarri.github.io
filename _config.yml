@@ -21,9 +21,9 @@ defaults:
     layout: page
 baseurl: "/"
 plugins:
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-sitemap
+- jekyll-paginate
+- jekyll-redirect-from
+- jekyll-sitemap
 exclude:
-  - package.json
-  - package-lock.json
+- package.json
+- package-lock.json
