@@ -27,3 +27,7 @@ plugins:
 exclude:
 - package.json
 - package-lock.json
+- webpack.mix.js
+- mix-manifest.json
+- Gemfile
+- Gemfile.lock
