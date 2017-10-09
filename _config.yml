@@ -5,10 +5,6 @@ collections:
   posts:
     title: Posts
     output: true
-  tags:
-    title: Tags
-    output: true
-    permalink: tags
   texts:
     title: Texts
     output: true
