@@ -8,6 +8,7 @@ collections:
   tags:
     title: Tags
     output: true
+    permalink: tags
   texts:
     title: Texts
     output: true
