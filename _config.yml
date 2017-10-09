@@ -5,6 +5,9 @@ collections:
   posts:
     title: Posts
     output: true
+  tags:
+    title: Tags
+    output: true
   texts:
     title: Texts
     output: true
