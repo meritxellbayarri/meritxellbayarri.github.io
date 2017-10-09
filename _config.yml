@@ -1,6 +1,7 @@
 ---
+paginate: 6
+paginate_path: "/:num/"
 title: Meritxell Bayarri
-timezone: Europe/Madrid
 collections:
   posts:
     title: Posts
@@ -8,22 +9,25 @@ collections:
   uploads:
     title: Uploads
     output: true
+timezone: Europe/Madrid
 defaults:
 - scope:
     path: ''
     type: posts
   values:
     layout: post
+    permalink: "/:title/"
 - scope:
     path: ''
     type: pages
   values:
-    layout: page
-baseurl: "/"
+    layout: default
+
 plugins:
-- jekyll-paginate
 - jekyll-redirect-from
 - jekyll-sitemap
+- jekyll-paginate
+
 exclude:
 - package.json
 - package-lock.json
@@ -31,3 +35,4 @@ exclude:
 - mix-manifest.json
 - Gemfile
 - Gemfile.lock
+- node_modules
