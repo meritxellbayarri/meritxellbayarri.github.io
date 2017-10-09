@@ -1,8 +1,35 @@
 const mix = require('laravel-mix');
 
-mix.setPublicPath('./');
+mix.options({
+    // css urls will be processed manually
+    processCssUrls: false,
+    // Remove all js comments
+    uglify: {
+        comments: false
+    },
+    // Optimize css files
+    purifyCss: false,
+    postCss: [
+        // Add css vendor prefixes for old browsers
+        require('autoprefixer')({
+            browsers: '> 1%'
+        }),
+        // remove duplicated css
+        require('postcss-discard-duplicates'),
+        // optimize color codes. ie: #ffffff -> #fff
+        require('postcss-colormin')({
+            legacy: true // IE support
+        }),
+        require('postcss-discard-comments')({
+            removeAll: true
+        })
+    ]
+});
 
-mix.sass('_src/sass/app.sass', '_includes/assets/app.css');
+mix.setPublicPath('./');
+mix.disableNotifications();
+
+mix.sass('_src/sass/app.sass', 'assets/app.css');
 
 // Full API
 // mix.js(src, output);

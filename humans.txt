@@ -1,0 +1,22 @@
+---
+layout: null
+---
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Meritxell Bayarri -- Author -- @meribayarri
+    Roger Vilà -- Developer -- @_rogervila
+
+# THANKS
+
+    Roger Vilà <rogervila@me.com>
+
+# TECHNOLOGY COLOPHON
+
+    AMP, JEKYLL
+                    
+# SITE
+                            
+Last update: {{ site.time }}

@@ -1,0 +1,36 @@
+---
+host: 'http://meritxellbayarri.github.io.dev/'
+url: 'http://meritxellbayarri.github.io.dev/'
+
+title: Meritxell Bayarri
+timezone: Europe/Madrid
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+baseurl: "/"
+plugins:
+- jekyll-paginate
+- jekyll-redirect-from
+- jekyll-sitemap
+exclude:
+- package.json
+- package-lock.json
+- webpack.mix.js
+- mix-manifest.json
+- Gemfile
+- Gemfile.lock
