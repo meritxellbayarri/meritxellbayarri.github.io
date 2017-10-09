@@ -23,17 +23,24 @@ layout: compress
                 <h2 class="subtitle">
                     {{ page.subtitle }}
                 </h2>
+                <div class="tags">
+                    {% for tag in page.tags %}
+                        <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-            <ul>
-                <li><a href="{{ site.url }}">Inici</a></li>
-                <li class="is-active"><a href="{{ page.url | absolute_url }}" aria-current="page">{{ page.title }}</a></li>
-            </ul>
-        </nav>
+    <div class="Breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="{{ site.url }}">Inici</a></li>
+                    <li class="is-active"><a href="{{ page.url | absolute_url }}" aria-current="page">{{ page.title }}</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <section class="section">
