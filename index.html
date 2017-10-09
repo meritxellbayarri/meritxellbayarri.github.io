@@ -36,7 +36,9 @@ layout: default
                     </h3>
                 </header>
                 <main class="content">
-                    {{ post.content | truncatewords: 50 }}
+                    <p>
+                        {{ post.content | truncatewords: 50 }}
+                    </p>
                 </main>
                 <footer>
                     <div class="tags">
