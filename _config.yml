@@ -5,11 +5,11 @@ collections:
   posts:
     title: Posts
     output: true
+  texts:
+    title: Texts
+    output: true
   uploads:
     title: Uploads
-    output: true
-  texts:
-    title: texts
     output: true
 defaults:
 - scope:
