@@ -30,14 +30,15 @@ layout: default
             <article>
                 <header>
                     <h3 class="title is-4">
-                        <a href="{{ post.url | absolute_url }}">
+                        <a target="_blank" rel="nofollow noopener" href="{{ post.link }}">
                             {{ post.title }}
                         </a>
                     </h3>
                 </header>
                 <main class="content">
                     <p>
-                        {{ post.content | truncatewords: 50 }}
+                        {{ post.content }}
+                        <br>
                     </p>
                 </main>
                 <footer>
