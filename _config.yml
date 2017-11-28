@@ -1,8 +1,6 @@
 ---
 title: Meritxell Bayarri
 timezone: Europe/Madrid
-cloudinary:
-  url: 'https://res.cloudinary.com/puntpla/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/'
 collections:
   posts:
     title: Posts
@@ -22,10 +20,12 @@ defaults:
     type: pages
   values:
     layout: default
+cloudinary:
+  url: https://res.cloudinary.com/puntpla/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/
 paginate: 6
 paginate_path: "/:num/"
 plugins:
-- plugins:
+- plugins: 
 - github-pages
 exclude:
 - package.json
