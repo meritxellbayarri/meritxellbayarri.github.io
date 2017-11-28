@@ -1,66 +1,33 @@
 ---
-layout: compress
+layout: default
 ---
 
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} - Meritxell Bayarri</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/app.css">
-</head>
-<body>
+{% include header.html %}
 
-    <header class="hero">
-        <div class="hero-body Header__post">
-            <div class="container">
-                <h1 class="title">
-                    {{ page.title }}
-                </h1>
-                <h2 class="subtitle">
-                    {{ page.subtitle }}
-                </h2>
-                <div class="tags">
-                    {% for tag in page.tags %}
-                        <span class="tag">{{ tag }}</span>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </header>
+{% comment %}
+{% include sidebar.html %}
+{% endcomment %}
 
-    <div class="Breadcrumbs">
-        <div class="container">
-            <nav class="breadcrumb" aria-label="breadcrumbs">
-                <ul>
-                    <li><a href="{{ site.url }}">Inici</a></li>
-                    <li class="is-active"><a href="{{ page.url | absolute_url }}" aria-current="page">{{ page.title }}</a></li>
-                </ul>
-            </nav>
-        </div>
+{% include hero.html title=page.title subtitle=page.origin image=page.image %}
+
+<main id="content">
+    <div class="m3 center">
+        <a href="{{ site.url }}" class="h4 italic text-decoration-none">&larr; Volver</a>
     </div>
 
-    <section class="section">
-        <div class="container">
-            <div class="content">
-                {{ content }}
-            </div>
+    <article class="photo-article mt4">
+        <div {% comment %} class="ampstart-dropcap" {% endcomment %}>
+            {{ content }}
         </div>
-    </section>
+        <footer class="mt4">
+            <strong>Article original:</strong>
+            <a rel="noopener" target="_blank" href="{{ page.link }}">{{ page.link }}</a>
+        </footer>
+    </article>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <p>
-                    <span>&copy;</span>
-                    <time>{{ site.time | date: "%Y" }}</time>
-                    <span>Meritxell Bayarri</span>
-                </p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    <aside>
+        {% include socialbox.html%}
+    </aside>
+</main>
+
+{% include footer.html %}

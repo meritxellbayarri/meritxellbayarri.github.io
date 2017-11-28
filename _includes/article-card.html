@@ -1,0 +1,10 @@
+<article class="ampstart-article-summary m0 relative">
+    <a href="{{ site.url }}{{ post.url }}">
+        <amp-img width="400" height="300" layout="responsive" src="{{ site.cloudinary.url }}meritxell-bayarri_tulp9y"></amp-img>
+        <header class="absolute bottom-0 right-0 left-0 center m3 p3">
+            <h3 class="caps bold">{{ include.post.origin }}</h3>
+            <h1 class="h2 my1">{{ include.post.title }}</h1>
+            <p class="h3 bold">{{ include.post.date | date: "%d/%m/%Y" }}</p>
+        </header>
+    </a>
+</article>
