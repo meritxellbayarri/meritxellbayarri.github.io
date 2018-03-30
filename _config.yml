@@ -25,8 +25,9 @@ cloudinary:
 paginate: 6
 paginate_path: "/:num/"
 plugins:
-- plugins: 
 - github-pages
+- jekyll-sitemap
+
 exclude:
 - package.json
 - package-lock.json
