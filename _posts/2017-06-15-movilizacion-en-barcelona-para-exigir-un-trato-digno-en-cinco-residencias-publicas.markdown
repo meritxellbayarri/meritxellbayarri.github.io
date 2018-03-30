@@ -1,6 +1,5 @@
 ---
-title: Movilización en Barcelona para exigir un trato "digno" en cinco residencias
-  públicas
+title: Movilización en Barcelona para exigir un trato "digno" en cinco residencias públicas
 date: 2017-06-15 00:00:00 +02:00
 link: http://www.20minutos.es/noticia/3065833/0/movilizacion-en-barcelona-exigir-trato-digno-cinco-residencias-publicas
 origin: 20 Minutos
