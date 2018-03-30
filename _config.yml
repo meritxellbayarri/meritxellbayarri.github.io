@@ -27,6 +27,8 @@ paginate_path: "/:num/"
 plugins:
 - github-pages
 - jekyll-sitemap
+include:
+- google1d1e896bdbd48468.html
 exclude:
 - package.json
 - package-lock.json
