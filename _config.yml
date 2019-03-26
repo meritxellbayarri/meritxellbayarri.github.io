@@ -21,7 +21,7 @@ defaults:
   values:
     layout: default
 cloudinary:
-  url: https://res.cloudinary.com/puntpla/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/
+  url: https://res.cloudinary.com/puntpla/image/upload/f_auto,q_auto:best,dpr_auto,w_auto,c_scale,g_auto/
 paginate: 6
 paginate_path: "/:num/"
 plugins:
