@@ -1,0 +1,12 @@
+header:
+  image: https://res.cloudinary.com/meritxell/image/upload/f_auto,q_auto:best,w_128,h_128,c_fill,g_face,dpr_auto,r_max/meritxell-bayarri
+  hello: Meritxell Bayarri
+  whoami: Especialitzada en periodisme local.
+projects:
+  title: Open Source
+  call: View more projects &rarr;
+  url: '#'
+articles:
+  title: Articles
+  description: Articles
+  call: Més articles &rarr;

@@ -1,31 +1,46 @@
 ---
-layout: default
+title: Meritxell Bayarri
 ---
 
-{% include header.html %}
-
+<header>
+    {% assign image = site.data.content.home.header.image %}
+    {% include me.html image=image %}
+</header>
 {% comment %}
-{% include sidebar.html %}
+<section class="section has-background-light">
+    <div class="container">
+        <h2 class="title">{{ site.data.content.home.projects.title }}</h2>
+        <div class="columns is-multiline">
+            {% for project in site.data.projects limit:3 %}
+            {% include project.html project=project %}
+            {% endfor %}
+        </div>
+
+        <div class="content">
+            <a target="_blank" rel="noopener noreferrer" href="{{ site.data.content.home.projects.url }}">{{ site.data.content.home.projects.call }}</a>
+        </div>
+    </div>
+</section>
 {% endcomment %}
-
-{% include hero.html title="Periodista" subtitle="Meritxell Bayarri" image="meritxell-bayarri_bux2md" %}
-
-<main id="content">
-
-    {% comment %}
-    {% include description.html %}
-    {% endcomment %}
-
-    {% include socialbox.html%}
-
-    <h2 class="m3 mb4 pb4 caps bold center h3">Articles</h2>
-
-    {% for post in paginator.posts %}
-        {% include article-card.html post=post %}
-    {% endfor %}
-
-    {% include pagination.html %}
-
-</main>
-
-{% include footer.html %}
+<section>
+<div class="section has-background-light">
+    <div class="container">
+        <h2 class="title">{{ site.data.content.home.articles.title }}</h2>
+        <p class="content">{{ site.data.content.home.articles.description }}</p>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            {% for post in site.posts limit:6 %}
+            <div class="column is-4 is-flex">
+                {% include article.html post=post %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="content">
+            <a href="{{ site.url }}/blog">{{ site.data.content.home.articles.call }}</a>
+        </div>
+    </div>
+</div>
+</section>

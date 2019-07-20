@@ -16,7 +16,7 @@ layout:
 
 # TECHNOLOGY COLOPHON
 
-    AMP, JEKYLL
+    JEKYLL
                     
 # SITE
                             
