@@ -1,6 +1,6 @@
 ---
 title: 'Amenaza en el metro: "O te apartas o te apuñalo"'
-date: 2019-07-20 20:58:00 +02:00
+date: 2019-05-23 20:58:00 +02:00
 original: https://www.metropoliabierta.com/el-pulso-de-la-ciudad/movilidad/amenaza-metro-apartas-apunalo_16824_102.html
 cloudinary: mett_9_1200x480_j4ce0u
 ---
