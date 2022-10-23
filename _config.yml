@@ -1,9 +1,13 @@
 ---
 title: Meritxell Bayarri - SEO Content Writer
-person: Meritxell Bayarri
-position: SEO Content writer
-email: contact@meritxellbayarri.com
 timezone: Europe/Madrid
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
 - scope:
     path: ''
@@ -19,9 +23,12 @@ defaults:
     permalink: "/portfolio/:title"
     sitemap: true
 - scope:
-    path: "assets/**/*"
+    path: assets/**/*
   values:
     sitemap: false
+person: Meritxell Bayarri
+position: SEO Content writer
+email: contact@meritxellbayarri.com
 repository: meritxellbayarri/meritxellbayarri.github.io
 cloudinary:
   base: https://res.cloudinary.com/meritxell/image/upload/
@@ -43,22 +50,22 @@ webmaster_verifications:
 social:
   name: Meritxell Bayarri
   links:
-    - https://twitter.com/meribayarri
-    - https://es.linkedin.com/in/meritxell-bayarri
+  - https://twitter.com/meribayarri
+  - https://es.linkedin.com/in/meritxell-bayarri
 paginate: 9
 paginate_path: "/portfolio/page/:num/"
 sass:
   sass_dir: _sass
   style: compressed
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
-  - ".gitignore"
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE
+- ".gitignore"
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-github-metadata
-  - jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-gist
+- jekyll-github-metadata
+- jekyll-redirect-from
