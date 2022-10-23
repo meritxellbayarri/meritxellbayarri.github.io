@@ -1,7 +1,0 @@
----
-layout: 
----
-
-User-agent: *
-Disallow: /api
-Sitemap: https://meritxellbayarri.github.io/sitemap.xml
