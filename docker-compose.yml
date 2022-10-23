@@ -1,9 +1,0 @@
-version: '3'
-services:
-  rogervila.es:
-    container_name: web
-    restart: always
-    build:
-      context: ./
-    ports:
-      - '4000:80'
