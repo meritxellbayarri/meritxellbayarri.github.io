@@ -20,7 +20,7 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/portfolio/:title"
+    permalink: "/blog/:title"
     sitemap: true
 - scope:
     path: assets/**/*
@@ -53,7 +53,7 @@ social:
   - https://twitter.com/meribayarri
   - https://es.linkedin.com/in/meritxell-bayarri
 paginate: 9
-paginate_path: "/portfolio/page/:num/"
+paginate_path: "/blog/page/:num/"
 sass:
   sass_dir: _sass
   style: compressed

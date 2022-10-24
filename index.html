@@ -2,7 +2,7 @@
 title: Home
 layout: default
 redirect_from:
-- "/portfolio/"
+- "/blog/"
 ---
 
 {% include components/hero.html
@@ -11,19 +11,19 @@ description=site.data.pages.home.hero.description
 image="https://res.cloudinary.com/meritxell/image/upload/f_auto,dpr_auto,q_auto:best,w_656,h_656/meritxellbayarri"
 %}
 
-<section id="portfolio" class="bg-white dark:bg-gray-900">
+<section id="blog" class="bg-white dark:bg-gray-900">
     {% if site.posts.size > 0 %}
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                {{ site.data.pages.home.portfolio.title }}
+                {{ site.data.pages.home.blog.title }}
             </h2>
             <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-                {{ site.data.pages.home.portfolio.description }}
+                {{ site.data.pages.home.blog.description }}
             </p>
         </div>
         <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-            {% for post in site.posts %}
+            {% for post in site.posts limit:2 %}
             <div class="cursor-pointer items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
                 onclick="location.href = '{{ post.url | relative_url }}'">
                 <a href="{{ post.url | relative_url }}" class="block bg-white" style="max-height: 300px">
