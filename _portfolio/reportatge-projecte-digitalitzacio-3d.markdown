@@ -4,8 +4,9 @@ date: 2021-06-12 00:00:00 +02:00
 tags:
 - branding
 type: video
+source: youtube
 link: 7RWeOAVcrj0
-Key: 
+Key:
 ---
 
 History confirms that the preservation of elements of festive imagery is not an easy task. We are often aware of the disappearance of festive elements due to their deterioration, due to an accident, or simply due to a prolonged lack of interest on the part of groups and/or institutions.
