@@ -107,10 +107,7 @@ image="https://res.cloudinary.com/meritxell/image/upload/f_auto,dpr_auto,q_auto:
                         {% for video in videos %}
                         <li>
                             <span class="block items-center p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700">
-                                <iframe title="{{ video.title }}" class="max-w-full" loading="lazy" width="560"
-                                    height="315"
-                                    src="https://www.youtube.com/embed/{{ video.link }}?rel=0&amp;controls=0"
-                                    frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                                <lite-youtube videoid="{{ video.link }}"></lite-youtube>
                             </span>
                         </li>
                         {% endfor %}
