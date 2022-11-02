@@ -21,7 +21,7 @@ layout: default
                                 {{ site.position }}
                             </p>
                             <p class="text-base font-light text-gray-500 dark:text-gray-400">
-                                <time pubdate datetime="{{ page.date }}">{{ page.date | date: '%B %d, %Y' }}</time>
+                                <time pubdate datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time>
                             </p>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ layout: default
 {% if related_posts.size > 0 %}
 <aside aria-label="Related articles" class="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
     <div class="px-4 mx-auto max-w-screen-xl">
-        <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Other posts</h2>
+        <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Altres articles</h2>
         <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
             {% for post in related_posts limit:4 %}
             <article class="max-w-xs">
@@ -54,10 +54,12 @@ layout: default
                     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                 </h2>
                 <p class="mb-4 font-light text-gray-500 dark:text-gray-400">{{ post.excerpt | strip_html }}</p>
+                {% comment %}
                 <a href="{{ post.url | relative_url }}"
                     class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                     Read
                 </a>
+                {% endcomment %}
             </article>
             {% endfor %}
         </div>

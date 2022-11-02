@@ -6,7 +6,7 @@
                 {{ include.title }}
             </h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                {{ include.description | newline_to_br }}
+                {{ include.description | strip_html | newline_to_br }}
             </p>
             <a href="mailto:{{ site.email }}"
                 class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
@@ -16,7 +16,7 @@
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                     </path>
                 </svg>
-                Contact me
+                {{ include.cta }}
             </a>
         </div>
         <div class="mt-4 lg:mt-0 lg:col-span-5 lg:flex">

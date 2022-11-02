@@ -1,0 +1,166 @@
+---
+layout: default
+---
+
+{% include components/hero.html
+title=page.hero_title
+cta=page.cta
+description=content
+image="https://res.cloudinary.com/meritxell/image/upload/f_auto,dpr_auto,q_auto:best,w_656,h_656/meritxellbayarri"
+%}
+
+<section id="portfolio" class="bg-white dark:bg-gray-900">
+    <main class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <header class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+            <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                {{ page.portfolio_title }}
+            </h2>
+            <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                {{ page.portfolio_description }}
+            </p>
+        </header>
+
+        <div class="grid gap-8 lg:grid-cols-2">
+            <div>
+                <nav
+                    class="p-5 mb-4 bg-gray-50 rounded-lg border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Articles</h3>
+                    <ol class="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
+                        {% assign news = site.portfolio | where_exp: "portfolio", "portfolio.type == 'newspaper'" %}
+                        {% for article in news %}
+                        <li>
+                            <a href="{{ article.link }}" target="_blank" rel="noopener noreferrer"
+                                class="block items-center p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <img loading="lazy" class="mr-3 mb-3 w-12 h-12 rounded-full sm:mb-0 bg-white"
+                                    src="https://res.cloudinary.com/meritxell/image/upload/f_auto,dpr_auto,q_auto:best,c_fill,w_96,h_96/{{ article.source }}"
+                                    alt="{{ article.title }}" />
+                                <div class="text-gray-600 dark:text-gray-400">
+                                    <h3 class="text-base font-medium text-gray-900 dark:text-white flex items-center">
+                                        <span class="text-sm font-normal mr-1">
+                                            <svg class="w-4 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        {{ article.title }}
+                                    </h3>
+                                    {% for tag in article.tags %}
+                                    <span
+                                        class="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+                                        {{ tag }}
+                                    </span>
+                                    {% endfor %}
+                                </div>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </nav>
+                <nav
+                    class="p-5 mb-4 bg-gray-50 rounded-lg border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Folklore</h3>
+                    <ol class="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
+                        {% assign news = site.portfolio | where_exp: "portfolio", "portfolio.type == 'folklore'" %}
+                        {% for article in news %}
+                        <li>
+                            <a href="{{ article.link }}" target="_blank" rel="noopener noreferrer"
+                                class="block items-center p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <img loading="lazy" class="mr-3 mb-3 w-12 h-12 rounded-full sm:mb-0 bg-white"
+                                    src="https://res.cloudinary.com/meritxell/image/upload/f_auto,dpr_auto,q_auto:best,c_fill,w_96,h_96/{{ article.source }}"
+                                    alt="{{ article.title }}" />
+                                <div class="text-gray-600 dark:text-gray-400">
+                                    <h3 class="text-base font-medium text-gray-900 dark:text-white flex items-center">
+                                        <span class="text-sm font-normal mr-1">
+                                            <svg class="w-4 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        {{ article.title }}
+                                    </h3>
+                                    {% for tag in article.tags %}
+                                    <span
+                                        class="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+                                        {{ tag }}
+                                    </span>
+                                    {% endfor %}
+                                </div>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </nav>
+            </div>
+            <div>
+                <nav
+                    class="p-5 mb-4 bg-gray-50 rounded-lg border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Videos</h3>
+                    <ol class="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
+                        {% assign videos = site.portfolio | where_exp: "portfolio", "portfolio.type == 'video'" %}
+
+                        {% for video in videos %}
+                        <li>
+                            <span class="block items-center p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <lite-youtube videoid="{{ video.link }}"></lite-youtube>
+                            </span>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </main>
+</section>
+
+<section id="blog" class="bg-white dark:bg-gray-900">
+    {% if site.posts.size > 0 %}
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+            <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                {{ page.blog_title }}
+            </h2>
+            <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                {{ page.blog_description }}
+            </p>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-2">
+            {% for post in site.posts limit:2 %}
+            <article onclick="window.location = '{{ post.url | relative_url }}'"
+                class="cursor-pointer p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div class="flex justify-between items-center mb-5 text-gray-500">
+                    <ul class="flex">
+                        {% for tag in post.tags %}
+                        <li
+                            class="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+                            {{ tag }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <time class="text-sm" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+                </div>
+                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h2>
+                <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                    {{ post.excerpt | strip_html }}
+                </p>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img class="w-7 h-7 rounded-full"
+                            src="https://res.cloudinary.com/meritxell/image/upload/w_56,h_56,c_fill,f_auto,dpr_auto,q_auto:best/meritxellbayarri"
+                            alt="{{ post.title }}" />
+                        <span class="font-medium dark:text-white">
+                            {{ site.person }}
+                        </span>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</section>
