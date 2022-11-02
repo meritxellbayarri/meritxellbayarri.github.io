@@ -14,4 +14,6 @@ redirect_from:
 layout: home
 ---
 
-Amb més de cinc anys d’experiència en l’àmbit del periodisme local, he treballat per diferents mitjans com Metrópoli Abierta, 20 Minutos Barcelona, Eix Diari, Ràdio les Borges, ECO de Sitges i TAC 12. La meva vocació és la de buscar històries en els diferents racons dels municipis i les grans ciutats amb la intenció d’aprofundir en els fets i dotar-los d’una visió més global.
+Amb més de cinc anys d’experiència en l’àmbit del periodisme local, he treballat per diferents mitjans com Metrópoli Abierta, 20 Minutos Barcelona, Eix Diari, Ràdio les Borges, ECO de Sitges i TAC 12. 
+
+La meva vocació és la de buscar històries en els diferents racons dels municipis i les grans ciutats amb la intenció d’aprofundir en els fets i dotar-los d’una visió més global.
