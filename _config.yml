@@ -1,5 +1,5 @@
 ---
-title: Meritxell Bayarri - SEO Content Writer
+title: Meritxell Bayarri - Redactora SEO
 timezone: Europe/Madrid
 collections:
   posts:
@@ -30,12 +30,12 @@ defaults:
   values:
     sitemap: false
 person: Meritxell Bayarri
-position: SEO Content writer
+position: Redactora SEO
 email: contact@meritxellbayarri.com
 repository: meritxellbayarri/meritxellbayarri.github.io
 cloudinary:
   base: https://res.cloudinary.com/meritxell/image/upload/
-lang: en
+lang: ca
 description: Meritxell Bayarri
 url: https://meritxellbayarri.github.io/
 author: meribayarri
