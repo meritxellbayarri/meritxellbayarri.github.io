@@ -2,7 +2,6 @@
 title: How I increased Bestiari.cat relevance
 date: 2022-10-01 00:00:00 +02:00
 tags:
-- writting
 - video
 - branding
 image: agrupacio-bestiari
