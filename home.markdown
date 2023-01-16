@@ -3,7 +3,7 @@ title: Redactora SEO
 date: 2022-11-02 20:41:00 +01:00
 permalink: "/"
 sitemap: true
-hero_title: "\U0001F44B Hola, soc la Meritxell"
+hero_title: "\U0001F44B Hola, sóc la Meritxell"
 portfolio_title: "Portfolio \U0001F4F0"
 portfolio_description: Aquests son alguns dels treballs que he fet.
 blog_title: "Blog \U0001F4DD"
